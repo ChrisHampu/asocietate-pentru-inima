@@ -4,13 +4,13 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { label: 'Home', path: '/' },
-  { label: 'About Us', path: '/about' },
-  { label: 'Projects', path: '/projects' },
+  { label: 'Acasă', path: '/' },
+  { label: 'Despre noi', path: '/about' },
+  { label: 'Proiecte', path: '/projects' },
   { label: 'Impact', path: '/impact' },
-  { label: 'Get Involved', path: '/get-involved' },
-  { label: 'Partners & Sponsors', path: '/partners' },
+  { label: 'Implică-te', path: '/get-involved' },
+  { label: 'Parteneri', path: '/partners' },
   { label: 'Shop', path: '/shop' },
   { label: 'Contact', path: '/contact' },
-  { label: 'Donate', path: '/donate' },
+  { label: 'Donează', path: '/donate' },
 ]

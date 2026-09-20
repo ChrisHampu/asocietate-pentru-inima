@@ -192,15 +192,3 @@ svg {
   color: var(--color-primary-strong);
 }
 
-/* Placeholder page shell ----------------------------------------------------- */
-
-.page {
-  padding-block: 5rem 6rem;
-}
-
-.page-lead {
-  margin-top: 1rem;
-  max-width: 42rem;
-  font-size: 1.075rem;
-  color: var(--color-text-muted);
-}

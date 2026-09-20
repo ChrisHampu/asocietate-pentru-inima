@@ -8,7 +8,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Logo />
-        <nav aria-label="Primary">
+        <nav aria-label="Navigare principală">
           <ul className={styles.navList}>
             {navItems.map((item) => {
               const isDonate = item.path === '/donate'

@@ -1,26 +1,59 @@
 .footer {
   margin-top: 4rem;
   border-top: 1px solid var(--color-border);
-  padding-block: 2.5rem 2rem;
+  padding-block: 3rem 1.5rem;
 }
 
 .inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
-.navList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 1.1rem;
-  margin: 0;
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brand {
+  display: grid;
+  gap: 0.9rem;
+  justify-items: start;
+}
+
+.motto {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.columnTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-highlight-gold);
+}
+
+.navList,
+.contactList {
+  margin: 0.9rem 0 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 0.4rem;
 }
 
-.navList a {
+.navList a,
+.contactList li {
   color: var(--color-text-muted);
   font-size: 0.9rem;
 }
@@ -29,7 +62,10 @@
   color: var(--color-primary);
 }
 
-.copyright {
+.bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
   color: var(--color-text-muted);
   font-size: 0.875rem;
 }

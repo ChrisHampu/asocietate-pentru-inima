@@ -6,7 +6,7 @@ export function Layout() {
   return (
     <>
       <a className="skip-link" href="#main-content">
-        Skip to content
+        Sari la conținut
       </a>
       <Header />
       <main id="main-content">

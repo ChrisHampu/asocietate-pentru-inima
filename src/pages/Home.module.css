@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: 6rem 4.5rem;
+  padding-block: 5rem 3rem;
 }
 
 /* Decorative logo-icon watermark in the hero corner */
@@ -33,7 +33,7 @@
 }
 
 .hero h1 {
-  max-width: 22ch;
+  max-width: 20ch;
   margin-top: 0.9rem;
 }
 
@@ -51,56 +51,11 @@
   gap: 0.9rem;
 }
 
-/* Stats ---------------------------------------------------------------------- */
-
-.statsSection {
-  padding-block: 2.5rem;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 1.2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.statCard {
-  padding: 1.4rem 1.5rem;
-  background-color: var(--color-base);
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
-}
-
-.statValue {
-  display: block;
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.statValueGreen {
-  color: var(--color-accent-green);
-}
-
-.statValueGold {
-  color: var(--color-accent-gold);
-}
-
-.statValueBlue {
-  color: var(--color-highlight-blue);
-}
-
-.statValuePurple {
-  color: var(--color-primary);
-}
-
-.statLabel {
-  display: block;
-  margin-top: 0.35rem;
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+.heroBanner {
+  width: 100%;
+  max-height: 26rem;
+  border-radius: 1.5rem;
+  object-fit: cover;
 }
 
 /* Sections -------------------------------------------------------------------- */
@@ -127,35 +82,38 @@
   color: var(--color-text-muted);
 }
 
-.mediaPlaceholder {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
+.motto {
+  margin-top: 1.6rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.valuesImage {
+  width: 100%;
   border-radius: 1.25rem;
-  background: linear-gradient(
-    135deg,
-    var(--color-green-soft) 0%,
-    var(--color-gold-soft) 100%
-  );
-  color: var(--color-highlight-gold);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 .sectionLead {
   margin-top: 0.8rem;
-  max-width: 40rem;
+  max-width: 44rem;
   color: var(--color-text-muted);
 }
 
 .cardGrid {
   margin-top: 1.8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.2rem;
+  padding: 0;
+  list-style: none;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 1.6rem;
   background-color: var(--color-base);
   border: 1px solid var(--color-border);
@@ -171,6 +129,12 @@
   margin-top: 0.6rem;
   color: var(--color-text-muted);
   font-size: 0.95rem;
+}
+
+.cardLink {
+  margin-top: auto;
+  padding-top: 1.1rem;
+  font-weight: 600;
 }
 
 .cardGreen {
@@ -200,6 +164,6 @@
 
 .cta p {
   margin: 0.9rem auto 1.8rem;
-  max-width: 38rem;
+  max-width: 40rem;
   color: rgba(255, 255, 255, 0.85);
 }

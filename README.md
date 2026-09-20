@@ -1,6 +1,6 @@
-# Association
+# Asociația O Singură Inimă pentru Comunitate
 
-Placeholder website for a charitable association, built with React + Vite.
+Website for Asociația O Singură Inimă pentru Comunitate, built with React + Vite. Content is in Romanian.
 
 ## Getting started
 
@@ -15,6 +15,7 @@ npm run preview  # preview the production build
 
 - **Vite + React (TypeScript)** — minimal SPA scaffold
 - **react-router-dom** — URL routing for the nine pages (see `src/router.tsx` and `src/nav-items.ts`)
+- **`src/site-data.ts`** — contact details, bank data and social links; empty fields render as "se completează în curând"
 - **CSS Modules + global design tokens** — brand colors live as CSS custom properties in `src/styles/global.css`
 - **Roboto** — self-hosted via `@fontsource-variable/roboto` (no external font requests)
 
