@@ -6,29 +6,17 @@
   padding-block: 6rem 4.5rem;
 }
 
-.hero::before,
-.hero::after {
+/* Decorative logo-icon watermark in the hero corner */
+.hero::before {
   content: '';
   position: absolute;
-  border-radius: 50%;
+  top: 1rem;
+  right: 1rem;
+  width: 20rem;
+  height: 20rem;
+  background: url('../assets/logo-icon.png') center / contain no-repeat;
+  opacity: 0.14;
   pointer-events: none;
-}
-
-/* Decorative circles echo the logo mark: solid green + gold ring */
-.hero::before {
-  top: -7rem;
-  right: -6rem;
-  width: 24rem;
-  height: 24rem;
-  background-color: var(--color-green-soft);
-}
-
-.hero::after {
-  top: 6rem;
-  right: 7rem;
-  width: 13rem;
-  height: 13rem;
-  border: 2rem solid var(--color-gold-soft);
 }
 
 .hero > :global(.container) {

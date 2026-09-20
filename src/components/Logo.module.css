@@ -1,22 +1,20 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
 }
 
 .logo:hover {
   text-decoration: none;
 }
 
-.mark {
-  width: 1.75rem;
-  height: 1.75rem;
-  flex: none;
+.image {
+  display: block;
+  height: 4.25rem;
+  width: auto;
 }
 
-.text {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--color-primary);
+@media (max-width: 720px) {
+  .image {
+    height: 2.5rem;
+  }
 }
