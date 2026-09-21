@@ -17,7 +17,7 @@ const focusAreas = [
   },
   {
     title: 'Persoane vulnerabile',
-    color: 'purple' as const,
+    color: 'primary' as const,
     text: 'Suntem alături de oamenii care trec prin perioade dificile, fie că se confruntă cu probleme de sănătate, dificultăți sociale sau alte situații care le afectează viața de zi cu zi.',
   },
 ]
@@ -25,7 +25,7 @@ const focusAreas = [
 const cardColorClasses = {
   green: styles.cardGreen,
   gold: styles.cardGold,
-  purple: styles.cardPurple,
+  primary: styles.cardPrimary,
 }
 
 export default function Home() {

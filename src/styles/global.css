@@ -2,7 +2,7 @@
  * Association — global design tokens & base styles
  * Brand palette:
  *   base             #ffffff
- *   primary (logo)   #563acb
+ *   primary (logo)   #152c7e
  *   accent green     #63ba49
  *   accent gold      #d8ac53
  *   highlight blue   #0f318a
@@ -12,9 +12,9 @@
 :root {
   --color-base: #ffffff;
 
-  --color-primary: #563acb;
-  --color-primary-strong: #452fa8;
-  --color-primary-soft: #f2eefb;
+  --color-primary: #152c7e;
+  --color-primary-strong: #112365;
+  --color-primary-soft: #eceef5;
 
   --color-accent-green: #63ba49;
   --color-green-soft: #f1f9ee;
@@ -130,7 +130,7 @@ svg {
 
 /* Text highlight utilities -------------------------------------------------- */
 
-.hl-purple {
+.hl-primary {
   color: var(--color-primary);
 }
 

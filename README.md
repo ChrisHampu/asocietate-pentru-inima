@@ -24,7 +24,7 @@ npm run preview  # preview the production build
 | Token                  | Value     | Use                              |
 | ---------------------- | --------- | -------------------------------- |
 | `--color-base`         | `#ffffff` | Page background                  |
-| `--color-primary`      | `#563acb` | Logo text, links, buttons        |
+| `--color-primary`      | `#152c7e` | Logo text, links, buttons        |
 | `--color-accent-green` | `#63ba49` | Logo shapes, stat accents        |
 | `--color-accent-gold`  | `#d8ac53` | Logo shapes, card accents        |
 | `--color-highlight-blue` | `#0f318a` | Text highlights (`.hl-blue`)   |
