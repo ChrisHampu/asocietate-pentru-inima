@@ -1,0 +1,11 @@
+.fragmentPrimary {
+  color: var(--color-primary);
+}
+
+.fragmentGreen {
+  color: var(--color-highlight-green);
+}
+
+.fragmentGold {
+  color: var(--color-highlight-gold);
+}

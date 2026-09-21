@@ -14,7 +14,7 @@ npm run preview  # preview the production build
 ## Stack
 
 - **Vite + React (TypeScript)** — minimal SPA scaffold
-- **react-router-dom** — URL routing for the nine pages (see `src/router.tsx` and `src/nav-items.ts`)
+- **react-router-dom** — URL routing for the site pages (see `src/router.tsx` and `src/nav-items.ts`)
 - **`src/site-data.ts`** — contact details, bank data and social links; empty fields render as "se completează în curând"
 - **CSS Modules + global design tokens** — brand colors live as CSS custom properties in `src/styles/global.css`
 - **Roboto** — self-hosted via `@fontsource-variable/roboto` (no external font requests)
@@ -27,6 +27,7 @@ npm run preview  # preview the production build
 | `--color-primary`      | `#152c7e` | Logo text, links, buttons        |
 | `--color-accent-green` | `#63ba49` | Logo shapes, stat accents        |
 | `--color-accent-gold`  | `#d8ac53` | Logo shapes, card accents        |
+| `--color-highlight-green` | `#4c8b34` | Text accents (`.motto` fragments) |
 | `--color-highlight-blue` | `#0f318a` | Text highlights (`.hl-blue`)   |
 | `--color-highlight-gold` | `#a2822d` | Text highlights (`.hl-gold`)   |
 

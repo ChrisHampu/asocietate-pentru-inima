@@ -46,6 +46,83 @@
   font-weight: 700;
 }
 
+/* Projects dropdown -------------------------------------------------------- */
+
+.itemWithMenu {
+  position: relative;
+}
+
+.caret {
+  display: inline-block;
+  margin-left: 0.25rem;
+  font-size: 0.65rem;
+  transition: transform 0.15s ease;
+}
+
+.itemWithMenu:hover .caret,
+.itemWithMenu:focus-within .caret {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  min-width: 18rem;
+  margin: 0.4rem 0 0;
+  padding: 0.45rem;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 0.85rem;
+  box-shadow: 0 16px 38px rgba(21, 44, 126, 0.14);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.4rem);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0.15s;
+}
+
+.itemWithMenu:hover .menu,
+.itemWithMenu:focus-within .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuLink {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.6rem;
+}
+
+.menuLink:hover {
+  background-color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+.menuTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.menuLink:hover .menuTitle,
+.menuLinkActive .menuTitle {
+  color: var(--color-primary);
+}
+
+.menuPeriod {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+
 .donate {
   display: inline-block;
   margin-left: 0.5rem;

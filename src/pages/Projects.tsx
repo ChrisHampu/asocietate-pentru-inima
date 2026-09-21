@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
+import { projects } from '../projects-data'
 import projectsImage from '../assets/projects-boxes.jpeg'
 import styles from '../styles/page.module.css'
 
@@ -57,6 +58,40 @@ export default function Projects() {
       </section>
 
       <section className={`container ${styles.section}`}>
+        <h2>Proiectele și evenimentele noastre</h2>
+        <p className={styles.sectionLead}>
+          Cinci inițiative pentru comunitatea din județul Sibiu, din toamna lui
+          2026 până la finalul lui 2027 — alege-o pe cea aproape de inima ta.
+        </p>
+        <ul className={styles.projectGrid}>
+          {projects.map((project) => (
+            <li key={project.slug}>
+              <Link
+                to={`/projects/${project.slug}`}
+                className={styles.projectCard}
+              >
+                <img
+                  className={styles.projectCardImage}
+                  src={project.image}
+                  alt={project.imageAlt}
+                  loading="lazy"
+                />
+                <div className={styles.projectCardBody}>
+                  <p className={styles.projectCardMeta}>
+                    {project.kind} · {project.period}
+                  </p>
+                  <h3>{project.title}</h3>
+                  <span className={styles.projectCardLink}>
+                    Descoperă proiectul →
+                  </span>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className={`container ${styles.section}`}>
         <div className={styles.narrow}>
           <h2>O singură inimă pentru oameni</h2>
           <p className={styles.text}>
@@ -71,9 +106,9 @@ export default function Projects() {
         <div className={`container ${styles.narrow}`}>
           <h2>Proiectele prind viață împreună</h2>
           <p className={styles.text}>
-            Pe măsură ce proiectele noastre vor fi lansate, aici vei putea
-            descoperi poveștile lor, oamenii cărora le sunt dedicate și
-            rezultatele pe care le construim împreună.
+            Fiecare proiect are nevoie de oameni care să-l susțină. Alege
+            inițiativa aproape de inima ta și ajută-ne să transformăm
+            implicarea în ajutor concret pentru cei care au nevoie de noi.
           </p>
           <div className={styles.actions}>
             <Link to="/get-involved" className="btn btn-primary">

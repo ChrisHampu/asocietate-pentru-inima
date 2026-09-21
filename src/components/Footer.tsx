@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { navItems } from '../nav-items'
 import { orPending, site } from '../site-data'
 import { Logo } from './Logo'
+import { Motto } from './Motto'
 import styles from './Footer.module.css'
 
 const legalItems = [
@@ -16,7 +17,9 @@ export function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
           <Logo />
-          <p className={styles.motto}>{site.motto}</p>
+          <p className={styles.motto}>
+            <Motto />
+          </p>
         </div>
 
         <nav aria-label="Navigare footer">

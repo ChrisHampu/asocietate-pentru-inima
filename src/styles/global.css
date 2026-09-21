@@ -5,6 +5,7 @@
  *   primary (logo)   #152c7e
  *   accent green     #63ba49
  *   accent gold      #d8ac53
+ *   highlight green  #4c8b34
  *   highlight blue   #0f318a
  *   highlight gold   #a2822d
  * ------------------------------------------------------------------------- */
@@ -18,6 +19,7 @@
 
   --color-accent-green: #63ba49;
   --color-green-soft: #f1f9ee;
+  --color-highlight-green: #4c8b34;
 
   --color-accent-gold: #d8ac53;
   --color-gold-soft: #fbf4e3;

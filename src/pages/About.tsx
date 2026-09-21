@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
-import founderImage from '../assets/founder.jpeg'
+import { Motto } from '../components/Motto'
+import founderImage from '../assets/founder.png'
 import { site } from '../site-data'
 import styles from '../styles/page.module.css'
 
@@ -99,31 +100,59 @@ export default function About() {
       <section id="povestea-noastra" className={styles.sectionSoft}>
         <div className={`container ${styles.narrow}`}>
           <p className={styles.eyebrow}>Povestea noastră</p>
-          <h2>Înapoi acasă, cu aceeași inimă pentru oameni.</h2>
+          <h2>Unele povești nu încep cu un proiect.</h2>
           <p className={styles.text}>
-            Povestea {site.nameGenitive} începe cu o experiență de viață construită
-            departe de casă și cu dorința de a aduce acasă tot ceea ce a fost
-            învățat de-a lungul anilor.
+            Încep cu o lecție de viață transmisă din generație în generație.
+            Povestea {site.nameGenitive} își are rădăcinile cu mult înainte de
+            înființarea ei.
           </p>
           <p className={styles.text}>
-            După 28 de ani petrecuți în Canada, fondatoarea și președinta
-            asociației s-a întors acasă, în Sibiu, cu o experiență de 14 ani în
-            sectorul non-profit, acumulată în cadrul fundației comunitare din
-            orașul în care a locuit.
+            Mama mea a crescut într-un orfelinat de la o vârstă foarte fragedă.
+            A cunoscut de copil ce înseamnă lipsurile, singurătatea și cât de
+            important este să existe cineva care să îți întindă o mână atunci
+            când ai nevoie.
           </p>
           <p className={styles.text}>
-            Drumul a început prin voluntariat: un an ca voluntar, un an în
-            bordul de directori, apoi opt ani în funcția de președinte al
-            fundației și, în următorii patru ani, director executiv. Au fost 14
-            ani în care a văzut, zi de zi, cât de mult se poate schimba o
-            comunitate atunci când oamenii aleg să se implice, să se sprijine
-            reciproc și să construiască împreună.
+            Din experiențele prin care a trecut, ea a ales să îmi transmită mie
+            nu tristețea trecutului, ci una dintre cele mai importante lecții
+            ale vieții mele: să nu rămân indiferentă atunci când pot ajuta.
           </p>
           <p className={styles.text}>
-            Întoarcerea în România, după aproape trei decenii, nu a însemnat
-            doar revenirea într-un loc drag, ci și începutul unei noi misiuni:
-            aceea de a pune experiența, cunoștințele și dorința de a face bine
-            în slujba comunității din Sibiu. Așa a luat naștere {site.name}.
+            De la mama mea am învățat să privesc oamenii dincolo de situația în
+            care se află, să văd nevoia, dar mai ales omul. Am învățat că un
+            gest care pentru noi poate părea mic poate însemna enorm pentru
+            cineva care trece printr-un moment greu.
+          </p>
+          <p className={styles.text}>
+            Această lecție m-a însoțit întreaga viață. Din România în Canada
+            și, după aproape trei decenii, din nou acasă.
+          </p>
+          <p className={styles.text}>
+            Am petrecut 28 de ani în Canada, iar implicarea în comunitate a
+            devenit o parte importantă din viața mea.
+          </p>
+          <p className={styles.text}>
+            Timp de 14 ani am activat în cadrul unei fundații canadiene: am
+            început ca voluntar, timp de doi ani, apoi am avut onoarea de a
+            ocupa funcția de Președinte timp de opt ani și, ulterior, funcția
+            de Executive Director timp de patru ani.
+          </p>
+          <p className={styles.text}>
+            Acei ani m-au învățat enorm despre voluntariat, responsabilitate,
+            organizarea proiectelor și evenimentelor caritabile, colaborarea cu
+            sponsorii și, mai presus de toate, despre puterea extraordinară pe
+            care o poate avea o comunitate atunci când oamenii aleg să
+            lucreze împreună.
+          </p>
+          <p className={styles.text}>
+            Am văzut ce se poate realiza atunci când în spatele unei cauze
+            există seriozitate, transparență, perseverență și oameni cărora le
+            pasă.
+          </p>
+          <p className={styles.text}>
+            După aproape trei decenii petrecute în Canada, m-am întors în
+            România cu dorința de a continua aici ceea ce am făcut cu atât de
+            mult drag acolo.
           </p>
 
           <blockquote className={styles.quote}>
@@ -138,14 +167,67 @@ export default function About() {
             </span>
           </blockquote>
 
+          <h3 className={styles.subheading}>O poveste care merge mai departe</h3>
           <p className={styles.text}>
-            Astăzi, această experiență continuă într-un loc apropiat de suflet:
-            comunitatea din Sibiu. Ne dorim să transformăm experiența acumulată
-            în sprijin concret, să construim proiecte care răspund unor nevoi
-            reale și, mai presus de toate, să fim acolo pentru oamenii care au
-            nevoie de o mână întinsă.
+            Astăzi, această poveste continuă alături de cei doi fii ai mei,
+            împreună cu care am fondat {site.name}.
           </p>
-          <p className={styles.motto}>{site.motto}</p>
+          <p className={styles.text}>
+            Și poate acesta este lucrul cel mai frumos pentru mine: o valoare
+            pe care am primit-o de la mama mea merge acum mai departe către o
+            nouă generație.
+          </p>
+          <p className={styles.text}>
+            <strong>
+              Trei generații. O singură lecție: să nu fim indiferenți.
+            </strong>
+          </p>
+          <p className={styles.text}>
+            Mama mea m-a învățat să ajut. Eu am încercat să transform această
+            lecție într-un mod de a trăi. Iar astăzi, împreună cu fiii mei,
+            vrem să o ducem mai departe în comunitatea noastră.
+          </p>
+
+          <h3 className={styles.subheading}>
+            De ce „O Singură Inimă pentru Comunitate”?
+          </h3>
+          <p className={styles.text}>
+            Pentru că noi credem că o comunitate nu se construiește doar prin
+            instituții, organizații sau proiecte. Se construiește prin oameni.
+          </p>
+          <p className={styles.text}>
+            Prin copilul căruia îi oferim șansa să înceapă școala cu
+            încredere. Prin familia pe care o ajutăm să treacă peste o perioadă
+            dificilă. Prin bunicul sau bunica pe care cineva își face timp să
+            îi viziteze. Prin voluntarul care oferă câteva ore din timpul său.
+            Prin compania care alege să susțină un proiect. Prin fiecare om
+            care spune: „Vreau să ajut.”
+          </p>
+          <p className={styles.text}>
+            Nu ne propunem să promitem că putem rezolva toate problemele. Ne
+            propunem însă ca, acolo unde putem face o diferență, să o facem cu
+            seriozitate, respect și inimă.
+          </p>
+          <p className={styles.text}>
+            Vom începe în județul Sibiu, aproape de oamenii și comunitățile pe
+            care dorim să le cunoaștem, iar fiecare proiect va fi construit în
+            jurul unor nevoi reale și al unui ajutor concret.
+          </p>
+          <p className={styles.text}>
+            Pentru noi, „O Singură Inimă pentru Comunitate” nu este doar numele
+            unei asociații. Este continuarea unei povești începute cu mulți
+            ani în urmă. Povestea unei mame care, deși a cunoscut greutățile
+            copilăriei, a ales să îi transmită fiicei sale dorința de a face
+            bine. Povestea unei fiice care a dus această lecție cu ea peste
+            ocean și înapoi acasă. Și povestea unei noi generații care a ales
+            să o ducă mai departe.
+          </p>
+          <p className={styles.text}>Pentru că binele se construiește împreună.</p>
+          <p className={styles.motto}>
+            <Motto />
+            <br />
+            {site.tagline}
+          </p>
         </div>
       </section>
 

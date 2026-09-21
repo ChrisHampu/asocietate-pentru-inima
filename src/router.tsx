@@ -3,6 +3,7 @@ import { Layout } from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import ProjectPage from './pages/ProjectPage'
 import Impact from './pages/Impact'
 import GetInvolved from './pages/GetInvolved'
 import Partners from './pages/Partners'
@@ -19,6 +20,7 @@ export const router = createBrowserRouter(
         { index: true, element: <Home /> },
         { path: 'about', element: <About /> },
         { path: 'projects', element: <Projects /> },
+        { path: 'projects/:slug', element: <ProjectPage /> },
         { path: 'impact', element: <Impact /> },
         { path: 'get-involved', element: <GetInvolved /> },
         { path: 'partners', element: <Partners /> },
